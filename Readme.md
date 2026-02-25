@@ -1,12 +1,12 @@
-# Eye Tracking Smart Wheelchair 👁️♿
+# Eye Tracking Smart Wheelchair
 
 An innovative IoT project designed to assist mobility-impaired individuals by controlling a wheelchair using eye gaze movements. This project leverages computer vision for eye tracking and Arduino for motor control.
 
-## 🚀 Overview
+## Overview
 
 The system captures real-time video via a webcam, processes it using **MediaPipe Face Mesh** to detect eye movements, and translates these movements into navigation commands. These commands are then transmitted via serial communication to an **Arduino**, which drives the wheelchair's motors.
 
-## 🛠️ Components
+## Components
 
 ### Hardware
 - **Arduino (Uno/Nano/Mega)**
@@ -23,7 +23,7 @@ The system captures real-time video via a webcam, processes it using **MediaPipe
 - **PySerial** (Serial communication)
 - **Arduino IDE** (Motor control logic)
 
-## 🎮 Control Mapping
+## Control Mapping
 
 | Eye/Face Movement | Serial Command | Wheelchair Action |
 |-------------------|----------------|-------------------|
@@ -33,12 +33,12 @@ The system captures real-time video via a webcam, processes it using **MediaPipe
 | Look Down         | `B`            | Move Backward     |
 | Center/Neutral    | `S`            | Stop              |
 
-## 📁 Project Structure
+## Project Structure
 
 - `Eye_tracker.py`: Python script for real-time eye tracking and command transmission.
 - `Smart_Wheel_Chair.ino`: Arduino sketch to receive commands and drive the L298N motor controller.
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 ### 1. Arduino Setup
 1. Connect the L298N motor driver to the Arduino pins as follows:
@@ -69,7 +69,7 @@ The system captures real-time video via a webcam, processes it using **MediaPipe
    ```
 4. A window will open showing the tracking. Move your eyes to control the wheelchair. Press `ESC` to quit.
 
-## 📝 Troubleshooting
+## Troubleshooting
 - **Serial Connection**: Ensure the correct COM port is selected and no other program (like Serial Monitor) is using it.
 - **Tracking Sensitivity**: If the movement detection is too sensitive or slow, adjust the thresholds in `Eye_tracker.py` (e.g., `dx > 35` or `ly < ny - 20`).
 - **Lighting**: Proper lighting is crucial for MediaPipe to detect facial landmarks accurately.
