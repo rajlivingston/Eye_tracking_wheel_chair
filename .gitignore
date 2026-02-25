@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv
+venv/
+ENV/
+
+# Arduino
+# Compiled binary formats
+*.eep
+*.hex
+*.bin
+# Compiled object files
+*.o
+*.a
+# Unit-test binaries
+*.elf
+# Arduino IDE 1.x build directory
+build/
+# Arduino IDE 2.x directories
+.arduinoIDE/
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
